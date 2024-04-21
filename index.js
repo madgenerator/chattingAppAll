@@ -6,6 +6,7 @@ const path=require("path");
 
 const app=express();
 app.use(express.static(path.join(__dirname,"src")));
+app.use(cors());
 const server = http.createServer(app);
 
 //websocket message data get and emit all
