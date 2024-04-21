@@ -5,7 +5,6 @@ const http=require("http");
 const path=require("path");
 
 const app=express();
-app.use(express.static(path.join(__dirname,"src")));
 app.use(cors());
 const server = http.createServer(app);
 
